@@ -351,9 +351,12 @@ void Processor<sint, sgf2n>::write_shares_to_file(const vector<int>& data_regist
 
   vector< sint > inpbuf (size);
 
+  cout<<"player "<<P.my_num()<<endl;
+
   for (unsigned int i = 0; i < size; i++)
   {
     inpbuf[i] = get_Sp_ref(data_registers[i]);
+    cout<<i<<' '<<inpbuf[i]<<endl;
   }
 
   binary_file_io.write_to_file(filename, inpbuf);
