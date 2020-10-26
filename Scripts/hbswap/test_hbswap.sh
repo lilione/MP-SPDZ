@@ -1,3 +1,5 @@
+# bash Scripts/hbswap/test_hbswap.sh
+
 #!/usr/bin/env bash
 set -e
 
@@ -16,13 +18,13 @@ prepare() {
 }
 
 compile() {
-    ./compile.py honeybadgerswap_init
-    ./compile.py honeybadgerswap_inputmask
-    ./compile.py honeybadgerswap_trade
+    ./compile.py hbswap_init
+    ./compile.py hbswap_inputmask
+    ./compile.py hbswap_trade
 }
 
 run() {
-    #./Scripts/mal-shamir.sh honeybadgerswap
+    #./Scripts/mal-shamir.sh hbswap
     ./$prog -N $players -T $threshold -p 0 -pn $port $1 &
     ./$prog -N $players -T $threshold -p 1 -pn $port $1 &
     ./$prog -N $players -T $threshold -p 2 -pn $port $1
@@ -30,11 +32,11 @@ run() {
 
 trade() {
     echo "-----------------------------------------------"
-    run honeybadgerswap_inputmask
+    run hbswap_inputmask
     echo "-----------------------------------------------"
-    python3 Scripts/client.py $1 $2
+    python3 Scripts/hbswap/hbswap_client.py $1 $2
     echo "-----------------------------------------------"
-    run honeybadgerswap_trade
+    run hbswap_trade
     echo "-----------------------------------------------"
     python3 Scripts/server_org_file.py
 }
@@ -42,6 +44,6 @@ trade() {
 prepare
 compile
 
-run honeybadgerswap_init
+run hbswap_init
 trade 1.1 -2.5
 trade -1.1 2

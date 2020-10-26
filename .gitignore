@@ -117,3 +117,6 @@ Thumbs.db
 _build/
 .idea/
 /venv
+
+#
+*build/
