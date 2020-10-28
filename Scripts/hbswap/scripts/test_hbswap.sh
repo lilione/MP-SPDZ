@@ -34,16 +34,16 @@ trade() {
     echo "-----------------------------------------------"
     run hbswap_inputmask
     echo "-----------------------------------------------"
-    python3 Scripts/hbswap/hbswap_client.py $1 $2
+    python3 Scripts/hbswap/python/hbswap_client.py $1 $2
     echo "-----------------------------------------------"
     run hbswap_trade
     echo "-----------------------------------------------"
-    python3 Scripts/server_org_file.py
+    python3 Scripts/hbswap/python/server_org_file.py
 }
 
-prepare
-compile
-
-run hbswap_init
+#prepare
+#compile
+#
+#run hbswap_init
 trade 1.1 -2.5
 trade -1.1 2

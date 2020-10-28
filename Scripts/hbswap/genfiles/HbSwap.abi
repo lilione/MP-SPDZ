@@ -42,6 +42,18 @@
       {
         "indexed": false,
         "internalType": "uint256",
+        "name": "idxETH",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "idxTOK",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
         "name": "maskedETH",
         "type": "uint256"
       },
@@ -82,6 +94,16 @@
   {
     "constant": false,
     "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "idxETH",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "idxTOK",
+        "type": "uint256"
+      },
       {
         "internalType": "uint256",
         "name": "maskedETH",

@@ -25,9 +25,10 @@ abigen_files() {
 }
 
 sync_go_binding() {
-  abigen_files HbSwap hbwap
+  abigen_files HbSwap hbswap
 }
 
+cd Scripts/hbswap
 truffle_complie
 update_genfiles
 sync_go_binding

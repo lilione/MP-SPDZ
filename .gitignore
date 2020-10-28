@@ -120,3 +120,6 @@ _build/
 
 #
 *build/
+*data/
+*log/
+*db/

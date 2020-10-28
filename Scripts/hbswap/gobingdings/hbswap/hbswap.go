@@ -1,7 +1,7 @@
 // Code generated - DO NOT EDIT.
 // This file is a generated binding and any manual changes will be lost.
 
-package hbwap
+package hbswap
 
 import (
 	"math/big"
@@ -28,10 +28,10 @@ var (
 )
 
 // HbSwapABI is the input ABI used to generate the binding from.
-const HbSwapABI = "[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"idxETH\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"idxTOK\",\"type\":\"uint256\"}],\"name\":\"Inputmask\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"maskedETH\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"maskedTOK\",\"type\":\"uint256\"}],\"name\":\"Trade\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[],\"name\":\"inputmaskCnt\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"tradePrep\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"maskedETH\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maskedTOK\",\"type\":\"uint256\"}],\"name\":\"trade\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}]"
+const HbSwapABI = "[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"idxETH\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"idxTOK\",\"type\":\"uint256\"}],\"name\":\"Inputmask\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"idxETH\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"idxTOK\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"maskedETH\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"maskedTOK\",\"type\":\"uint256\"}],\"name\":\"Trade\",\"type\":\"event\"},{\"constant\":true,\"inputs\":[],\"name\":\"inputmaskCnt\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[],\"name\":\"tradePrep\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"idxETH\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"idxTOK\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maskedETH\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"maskedTOK\",\"type\":\"uint256\"}],\"name\":\"trade\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}]"
 
 // HbSwapBin is the compiled bytecode used for deploying new contracts.
-var HbSwapBin = "0x608060405234801561001057600080fd5b506101e4806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063064d48101461004657806393910e6614610050578063e20be69a1461006e575b600080fd5b61004e6100a6565b005b610058610132565b6040518082815260200191505060405180910390f35b6100a46004803603604081101561008457600080fd5b810190808035906020019092919080359060200190929190505050610138565b005b7f41b5269d9f63f406684443591d04aad157a82f8635eb2872a674c6c8c152652633600054600160005401604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838152602001828152602001935050505060405180910390a160026000808282540192505081905550565b60005481565b7fc6c64663abd604372f6cce5d7fa31596ffb4de182467cd1fc81bd8adb88c2c2e338383604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838152602001828152602001935050505060405180910390a1505056fea265627a7a72315820a3682fe42dff38353958aada59f31e8a22b693216b681f5ec3c7c9c796b90a1964736f6c63430005100032"
+var HbSwapBin = "0x608060405234801561001057600080fd5b5061020a806100206000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063064d48101461004657806393910e6614610050578063ad3a39b01461006e575b600080fd5b61004e6100ba565b005b610058610146565b6040518082815260200191505060405180910390f35b6100b86004803603608081101561008457600080fd5b810190808035906020019092919080359060200190929190803590602001909291908035906020019092919050505061014c565b005b7f41b5269d9f63f406684443591d04aad157a82f8635eb2872a674c6c8c152652633600054600160005401604051808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838152602001828152602001935050505060405180910390a160026000808282540192505081905550565b60005481565b7fe0b736dda314e2582531850d21df6cf2e51c84c4c27ffeca38bbb029332fba8c3385858585604051808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018581526020018481526020018381526020018281526020019550505050505060405180910390a15050505056fea265627a7a7231582012614fa75023fbbe273a6b67e82cfdcc2cdc0aaab72493568aa039bb7bf8d39564736f6c63430005100032"
 
 // DeployHbSwap deploys a new Ethereum contract, binding an instance of HbSwap to it.
 func DeployHbSwap(auth *bind.TransactOpts, backend bind.ContractBackend) (common.Address, *types.Transaction, *HbSwap, error) {
@@ -215,25 +215,25 @@ func (_HbSwap *HbSwapCallerSession) InputmaskCnt() (*big.Int, error) {
 	return _HbSwap.Contract.InputmaskCnt(&_HbSwap.CallOpts)
 }
 
-// Trade is a paid mutator transaction binding the contract method 0xe20be69a.
+// Trade is a paid mutator transaction binding the contract method 0xad3a39b0.
 //
-// Solidity: function trade(uint256 maskedETH, uint256 maskedTOK) returns()
-func (_HbSwap *HbSwapTransactor) Trade(opts *bind.TransactOpts, maskedETH *big.Int, maskedTOK *big.Int) (*types.Transaction, error) {
-	return _HbSwap.contract.Transact(opts, "trade", maskedETH, maskedTOK)
+// Solidity: function trade(uint256 idxETH, uint256 idxTOK, uint256 maskedETH, uint256 maskedTOK) returns()
+func (_HbSwap *HbSwapTransactor) Trade(opts *bind.TransactOpts, idxETH *big.Int, idxTOK *big.Int, maskedETH *big.Int, maskedTOK *big.Int) (*types.Transaction, error) {
+	return _HbSwap.contract.Transact(opts, "trade", idxETH, idxTOK, maskedETH, maskedTOK)
 }
 
-// Trade is a paid mutator transaction binding the contract method 0xe20be69a.
+// Trade is a paid mutator transaction binding the contract method 0xad3a39b0.
 //
-// Solidity: function trade(uint256 maskedETH, uint256 maskedTOK) returns()
-func (_HbSwap *HbSwapSession) Trade(maskedETH *big.Int, maskedTOK *big.Int) (*types.Transaction, error) {
-	return _HbSwap.Contract.Trade(&_HbSwap.TransactOpts, maskedETH, maskedTOK)
+// Solidity: function trade(uint256 idxETH, uint256 idxTOK, uint256 maskedETH, uint256 maskedTOK) returns()
+func (_HbSwap *HbSwapSession) Trade(idxETH *big.Int, idxTOK *big.Int, maskedETH *big.Int, maskedTOK *big.Int) (*types.Transaction, error) {
+	return _HbSwap.Contract.Trade(&_HbSwap.TransactOpts, idxETH, idxTOK, maskedETH, maskedTOK)
 }
 
-// Trade is a paid mutator transaction binding the contract method 0xe20be69a.
+// Trade is a paid mutator transaction binding the contract method 0xad3a39b0.
 //
-// Solidity: function trade(uint256 maskedETH, uint256 maskedTOK) returns()
-func (_HbSwap *HbSwapTransactorSession) Trade(maskedETH *big.Int, maskedTOK *big.Int) (*types.Transaction, error) {
-	return _HbSwap.Contract.Trade(&_HbSwap.TransactOpts, maskedETH, maskedTOK)
+// Solidity: function trade(uint256 idxETH, uint256 idxTOK, uint256 maskedETH, uint256 maskedTOK) returns()
+func (_HbSwap *HbSwapTransactorSession) Trade(idxETH *big.Int, idxTOK *big.Int, maskedETH *big.Int, maskedTOK *big.Int) (*types.Transaction, error) {
+	return _HbSwap.Contract.Trade(&_HbSwap.TransactOpts, idxETH, idxTOK, maskedETH, maskedTOK)
 }
 
 // TradePrep is a paid mutator transaction binding the contract method 0x064d4810.
@@ -462,14 +462,16 @@ func (it *HbSwapTradeIterator) Close() error {
 // HbSwapTrade represents a Trade event raised by the HbSwap contract.
 type HbSwapTrade struct {
 	User      common.Address
+	IdxETH    *big.Int
+	IdxTOK    *big.Int
 	MaskedETH *big.Int
 	MaskedTOK *big.Int
 	Raw       types.Log // Blockchain specific contextual infos
 }
 
-// FilterTrade is a free log retrieval operation binding the contract event 0xc6c64663abd604372f6cce5d7fa31596ffb4de182467cd1fc81bd8adb88c2c2e.
+// FilterTrade is a free log retrieval operation binding the contract event 0xe0b736dda314e2582531850d21df6cf2e51c84c4c27ffeca38bbb029332fba8c.
 //
-// Solidity: event Trade(address user, uint256 maskedETH, uint256 maskedTOK)
+// Solidity: event Trade(address user, uint256 idxETH, uint256 idxTOK, uint256 maskedETH, uint256 maskedTOK)
 func (_HbSwap *HbSwapFilterer) FilterTrade(opts *bind.FilterOpts) (*HbSwapTradeIterator, error) {
 
 	logs, sub, err := _HbSwap.contract.FilterLogs(opts, "Trade")
@@ -479,9 +481,9 @@ func (_HbSwap *HbSwapFilterer) FilterTrade(opts *bind.FilterOpts) (*HbSwapTradeI
 	return &HbSwapTradeIterator{contract: _HbSwap.contract, event: "Trade", logs: logs, sub: sub}, nil
 }
 
-// WatchTrade is a free log subscription operation binding the contract event 0xc6c64663abd604372f6cce5d7fa31596ffb4de182467cd1fc81bd8adb88c2c2e.
+// WatchTrade is a free log subscription operation binding the contract event 0xe0b736dda314e2582531850d21df6cf2e51c84c4c27ffeca38bbb029332fba8c.
 //
-// Solidity: event Trade(address user, uint256 maskedETH, uint256 maskedTOK)
+// Solidity: event Trade(address user, uint256 idxETH, uint256 idxTOK, uint256 maskedETH, uint256 maskedTOK)
 func (_HbSwap *HbSwapFilterer) WatchTrade(opts *bind.WatchOpts, sink chan<- *HbSwapTrade) (event.Subscription, error) {
 
 	logs, sub, err := _HbSwap.contract.WatchLogs(opts, "Trade")
@@ -516,9 +518,9 @@ func (_HbSwap *HbSwapFilterer) WatchTrade(opts *bind.WatchOpts, sink chan<- *HbS
 	}), nil
 }
 
-// ParseTrade is a log parse operation binding the contract event 0xc6c64663abd604372f6cce5d7fa31596ffb4de182467cd1fc81bd8adb88c2c2e.
+// ParseTrade is a log parse operation binding the contract event 0xe0b736dda314e2582531850d21df6cf2e51c84c4c27ffeca38bbb029332fba8c.
 //
-// Solidity: event Trade(address user, uint256 maskedETH, uint256 maskedTOK)
+// Solidity: event Trade(address user, uint256 idxETH, uint256 idxTOK, uint256 maskedETH, uint256 maskedTOK)
 func (_HbSwap *HbSwapFilterer) ParseTrade(log types.Log) (*HbSwapTrade, error) {
 	event := new(HbSwapTrade)
 	if err := _HbSwap.contract.UnpackLog(event, "Trade", log); err != nil {
